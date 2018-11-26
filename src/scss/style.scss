@@ -1,0 +1,23 @@
+@import "./base/variables";
+@import "./base/normalize";
+// @import "./base/grid";
+
+@import "./components/header";
+
+@import "./partials/_mainPage.scss/logo";
+@import "./partials/_mainPage.scss/fill";
+
+
+@import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $c1;
+  font-family: 'KoHo', sans-serif;
+
+}
