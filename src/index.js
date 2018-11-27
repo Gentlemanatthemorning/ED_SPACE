@@ -6,6 +6,7 @@ import News from "./news/news.js";
 import Lessons from "./lessons/lessons.js";
 import About from "./about/about.js";
 import Contact from "./contact/contact.js";
+// import Episode1 from "./button";
 
 require("./scss/style.scss");
 
@@ -19,6 +20,9 @@ class Header extends React.Component {
               <span>#ED</span>
             </Link>
           </h1>
+          {/* <div className="click__button">
+            <Episode1 />
+          </div> */}
           <nav className="page__nav">
             <ul className="page__nav__list">
               <li>
@@ -41,11 +45,11 @@ class Header extends React.Component {
   }
 }
 
-// class NotFound extends React.Component {
-//   render() {
-//     return <h1> Not Found </h1>;
-//   }
-// }
+class NotFound extends React.Component {
+  render() {
+    return <h1> Not Found </h1>;
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   ReactDOM.render(
@@ -58,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <Route path="/lessons" component={Lessons} />
           <Route path="/about_space" component={About} />
           <Route path="/contact" component={Contact} />
-          {/* <Route component={NotFound} /> */}
+          <Route component={NotFound} />
         </Switch>
       </div>
     </HashRouter>,
