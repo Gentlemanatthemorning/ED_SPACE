@@ -1,14 +1,14 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-class News extends React.Component {
+class Games extends React.Component {
     render() {
       return (
         <div>
-          <h1>Hello News!</h1>
+          <h1>Hello Games!</h1>
         </div>
       )
     }
   }
   
-  export default News;
+  export default Games;

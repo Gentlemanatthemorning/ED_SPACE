@@ -13,7 +13,7 @@ class Main extends React.Component {
               <article>
                 <div className="img1">
                   <div>
-                    <h3 class="article__img__title">
+                    <h3 className="article__img__title">
                       Great Teacher
                       <br />
                       Founder ED_SPACE
@@ -22,7 +22,7 @@ class Main extends React.Component {
                 </div>
                 <div className="img2">
                   <div>
-                    <h3 class="article__img__title">
+                    <h3 className="article__img__title">
                       Great Teacher
                       <br />
                       English Language
@@ -31,7 +31,7 @@ class Main extends React.Component {
                 </div>
                 <div className="img3">
                   <div>
-                    <h3 class="article__img__title">
+                    <h3 className="article__img__title">
                       Great Teacher
                       <br />
                       Gameing Lessons
@@ -40,7 +40,7 @@ class Main extends React.Component {
                 </div>
                 <div className="img4">
                   <div>
-                    <h3 class="article__img__title">
+                    <h3 className="article__img__title">
                       Great Teacher
                       <br />
                       Art Projects
@@ -49,7 +49,7 @@ class Main extends React.Component {
                 </div>
                 <div className="img5">
                   <div>
-                    <h3 class="article__img__title">
+                    <h3 className="article__img__title">
                       Great Teacher
                       <br />
                       Young Business

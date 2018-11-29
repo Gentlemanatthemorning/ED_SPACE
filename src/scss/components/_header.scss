@@ -56,6 +56,7 @@
 }
 
 .page__logo {
+  text-decoration: none;
   &__link {
     margin-left: 100px;
     text-decoration: none;
@@ -64,5 +65,14 @@
     padding: 50px 5px 20px 5px;
     color: $c3;
     font-size: 40px;
+    & span {
+      text-decoration: none;
+      color: $c3;
+    }
   }
+  &__link:hover {
+    text-decoration: none;
+    color: $c3;
+  }
+  
 }

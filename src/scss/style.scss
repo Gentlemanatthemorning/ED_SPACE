@@ -3,12 +3,19 @@
 // @import "./base/grid";
 
 @import "./components/header";
+@import "./components/footer";
 
-@import "./partials/_mainPage.scss/logo";
-@import "./partials/_mainPage.scss/fill";
+@import "./partials/mainPage/logo";
+@import "./partials/mainPage/fill";
+
+@import "./partials/about/logo";
+@import "./partials/about/fill";
+
+@import "./partials/lessons/logo";
 
 
 @import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:200,300,400,500,600,700,800');
 
 
 * {

@@ -81,43 +81,20 @@
 }
 
 .carousel-control.left {
-  height: 400px;
+  height: 360px;
 }
 
 .carousel-control.right {
-  height: 400px;
+  height: 360px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   margin-bottom: 0;
 }
 
-.carousel-indicators li{
- background: $c1;
+.carousel-indicators li {
+  background: $c1;
 }
-.carousel-indicators li.active{
+.carousel-indicators li.active {
   background: $c3;
- }
-footer {
-  display: flex;
-  align-items: center;
-  margin: 10px 10px 10px 10px;
-  justify-content: flex-start;
-
-  & .instagram {
-    width: 30px;
-    height: 30px;
-    background: url("../images/instagram.png");
-    background-size: cover;
-    display: flex;
-    margin-left: 20px;
-  }
-  & .facebook {
-    width: 30px;
-    height: 30px;
-    background: url("../images/facebook.png");
-    background-size: cover;
-    display: flex;
-    margin-left: 20px;
-  }
 }

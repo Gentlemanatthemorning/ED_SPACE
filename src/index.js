@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Link, Switch } from "react-router-dom";
 import Main from "./App.js";
-import News from "./news/news.js";
+import Games from "./games/games.js";
 import Lessons from "./lessons/lessons.js";
 import About from "./about/about.js";
 import Contact from "./contact/contact.js";
@@ -26,7 +26,7 @@ class Header extends React.Component {
           <nav className="page__nav">
             <ul className="page__nav__list">
               <li>
-                <Link to="/news">#NEWS</Link>
+                <Link to="/games">#GAMES</Link>
               </li>
               <li>
                 <Link to="/lessons">#LESSONS</Link>
@@ -41,6 +41,7 @@ class Header extends React.Component {
           </nav>
         </div>
       </div>
+      
     );
   }
 }
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <Header />
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route path="/news" component={News} />
+          <Route path="/games" component={Games} />
           <Route path="/lessons" component={Lessons} />
           <Route path="/about_space" component={About} />
           <Route path="/contact" component={Contact} />
