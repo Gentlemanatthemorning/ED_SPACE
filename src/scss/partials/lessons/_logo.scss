@@ -1,11 +1,12 @@
 .container__fill__2 {
-    background: $c2;
-    height: 750px;
+  background: rgba(23, 23, 20, 0.7);
+  height: 750px;
 }
+
 .parallax__2 {
-    background: url("../images/bg2.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 750px;
-    width: 100vw;
-  }
+  background: url("../images/bg2.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+  width: 100vw;
+}

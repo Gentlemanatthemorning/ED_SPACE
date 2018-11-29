@@ -1,0 +1,64 @@
+.game {
+  text-align: center;
+
+  &__container {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__header {
+    font-size: 5em;
+    letter-spacing: 15px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+  }
+
+  &__status {
+    padding: 20px;
+    font-size: 25px;
+    color: $c3;
+  }
+
+  &__congrats{
+      font-size: 20px;
+      color: $c3;
+  }
+
+  &__result{
+      font-size: 20px;
+      color: $c3;
+  }
+
+  &__button{
+      background: $c1;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 25px;
+      border: none;
+      color: $c2;
+  }
+}
+
+.Game-intro {
+  font-size: large;
+}
+
+.card {
+  display: inline-block;
+  border-color: $c3;
+  border-width: 5px;
+  border-style: solid;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 150px;
+
+  &__container {
+    display: inline-block;
+  }
+}
+
+.matched {
+  border-color: $c1;
+}

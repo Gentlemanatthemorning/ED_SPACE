@@ -1,9 +1,10 @@
-.container__fill__1 {
+@import "./game";
+
+.container__fill__3 {
   background: rgba(23, 23, 20, 0.7);
   height: 750px;
 }
-
-.parallax__1 {
+.parallax__3 {
   background: url("../images/bg1.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
