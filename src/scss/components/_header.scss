@@ -1,5 +1,5 @@
 .page__header {
-  background: none;
+  background: rgba(23, 23, 20, 0.4);
   height: 90px;
   position: fixed;
   top: 0;
@@ -62,7 +62,7 @@
     text-decoration: none;
     background: $c2;
     display: block;
-    padding: 50px 5px 20px 5px;
+    padding: 46px 5px 0 5px;
     color: $c3;
     font-size: 40px;
     & span {
