@@ -39,6 +39,16 @@
       border: none;
       color: $c2;
   }
+  &__button:hover{
+    background: $c1;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    color: $c3;
+    transform: scale(1.1);
+    transition: .3s;
+}
 }
 
 .Game-intro {

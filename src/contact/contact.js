@@ -8,7 +8,73 @@ class Contact extends React.Component {
         <div className="main__logo">
           <div className="container">
             <div className="parallax__4" />
-            <div className="container__fill__4" />
+            <div className="container__fill__4">
+              <div className="form__container">
+                <form className="form" id="form">
+                  <div className="form__left">
+                    <div className="form__row">
+                      <label htmlFor="name" className="visuallyhidden">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form__control"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div className="form__row">
+                      <label htmlFor="email" className="visuallyhidden">
+                        E-mail
+                      </label>
+                      <input
+                        type="email"
+                        className="form__control"
+                        id="email"
+                        name="email"
+                        placeholder="E-mail"
+                      />
+                    </div>
+                    <div className="form__row">
+                      <label htmlFor="msg" className="visuallyhidden">
+                        Text Us
+                      </label>
+                      <textarea
+                        className="form__control"
+                        id="msg"
+                        name="msg"
+                        placeholder="Text Us"
+                      />
+                    </div>
+                    <label className="container__round">
+                      Безкоштовне заняття
+                      <input type="radio" name="radio" />
+                      <span className="checkmark" />
+                    </label>
+                    <label className="container__round">
+                      Регулярні заняття
+                      <input type="radio" name="radio" />
+                      <span className="checkmark" />
+                    </label>
+                  </div>
+                  <div className="form__right">
+                    <div className="form__img" />
+                    <div className="form__row">
+                      <label className="form__checkbox">
+                        <input type="checkbox" id="agree" name="regulations" />
+                        <span>I agree with company's privacy policy.</span>
+                      </label>
+                    </div>
+                    <div className="form__row">
+                      <button type="submit" className="form__submit">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
         <footer>
