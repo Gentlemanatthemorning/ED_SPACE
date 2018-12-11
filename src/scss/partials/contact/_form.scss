@@ -1,7 +1,7 @@
 .form {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 10px 15px 10px 15px;
 
   &__left {
     width: 735px;
@@ -47,7 +47,7 @@
   }
 
   &__control::placeholder {
-    color: $c1;
+    color: $c2;
   }
 
   &__checkbox {
@@ -131,9 +131,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: "Montserrat Alternates", sans-serif;
-
   color: $c3;
+  font-family: "Montserrat Alternates", sans-serif;
+  & span {
+    color: $c1;
+  }
 }
 
 /* Hide the browser's default radio button */

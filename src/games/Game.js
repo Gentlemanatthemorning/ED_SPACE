@@ -114,9 +114,13 @@ class Game extends Component {
       gameStatus = (
         <div className="game__status">
           <div className="game__congrats">GAME COMPLETE!</div>
-          <div className="game__result">You used {this.state.turnNo - 1} turns</div>
+          <div className="game__result">
+            You used {this.state.turnNo - 1} turns
+          </div>
           <div>
-            <button className="game__button" onClick={this.onPlayAgain}>Play again?</button>
+            <button className="game__button" onClick={this.onPlayAgain}>
+              Play again?
+            </button>
           </div>
         </div>
       );

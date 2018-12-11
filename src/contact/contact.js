@@ -9,6 +9,11 @@ class Contact extends React.Component {
           <div className="container">
             <div className="parallax__4" />
             <div className="container__fill__4">
+              <h2>
+                <span>Заповни форму</span> та отримай можливість прийняти участь
+                в <span>космічному </span>
+                занятті в нашому освітньому просторі
+              </h2>
               <div className="form__container">
                 <form className="form" id="form">
                   <div className="form__left">
@@ -47,13 +52,17 @@ class Contact extends React.Component {
                         placeholder="Text Us"
                       />
                     </div>
+                    <h2>
+                      <span>Просто вибери</span> заняття на яке хочеш
+                      записатись!
+                    </h2>
                     <label className="container__round">
-                      Безкоштовне заняття
+                      <span>Безкоштовне</span> заняття
                       <input type="radio" name="radio" />
                       <span className="checkmark" />
                     </label>
                     <label className="container__round">
-                      Регулярні заняття
+                      <span>Регулярні</span> заняття
                       <input type="radio" name="radio" />
                       <span className="checkmark" />
                     </label>
@@ -79,6 +88,8 @@ class Contact extends React.Component {
         </div>
         <footer>
           <p>&copy; #ED_SPACE 2018</p>
+          <p>+380-(00)-000-00-00</p>
+          <p>вул. Богдана Хмельницького 9. м. Біла Церква</p>
           <Link to="/contact" className="instagram" />
           <Link to="/contact" className="facebook" />
         </footer>

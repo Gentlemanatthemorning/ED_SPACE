@@ -13,6 +13,8 @@ class Lessons extends React.Component {
         </div>
         <footer>
           <p>&copy; #ED_SPACE 2018</p>
+          <p>+380-(00)-000-00-00</p>
+          <p>вул. Богдана Хмельницького 9. м. Біла Церква</p>
           <Link to="/contact" className="instagram" />
           <Link to="/contact" className="facebook" />
         </footer>

@@ -6,7 +6,6 @@ import Games from "./games/games.js";
 import Lessons from "./lessons/lessons.js";
 import About from "./about/about.js";
 import Contact from "./contact/contact.js";
-// import Episode1 from "./button";
 
 require("./scss/style.scss");
 
@@ -20,9 +19,6 @@ class Header extends React.Component {
               <span>#ED</span>
             </Link>
           </h1>
-          {/* <div className="click__button">
-            <Episode1 />
-          </div> */}
           <nav className="page__nav">
             <ul className="page__nav__list">
               <li>

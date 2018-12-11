@@ -1,5 +1,4 @@
 .page__header {
-  background: rgba(23, 23, 20, 0.4);
   height: 90px;
   position: fixed;
   top: 0;
@@ -16,12 +15,14 @@
 }
 
 .page__nav__list {
+  background: rgba(23, 23, 20, 0.7);
   display: flex;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
   list-style: none;
   margin: 0;
   padding: 0;
   align-items: center;
-  border-bottom: 1px solid #ffffff50;
 
   & a {
     font-weight: bold;
@@ -38,7 +39,8 @@
 .page__nav__list a:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 25%;
+  border-radius: 15px;
   left: 50%;
   right: 50%;
   height: 2px;
@@ -56,13 +58,14 @@
 }
 
 .page__logo {
-  text-decoration: none;
   &__link {
     margin-left: 100px;
     text-decoration: none;
-    background: $c2;
+    background: rgba(23, 23, 20, 0.7);
     display: block;
     padding: 46px 5px 0 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     color: $c3;
     font-size: 40px;
     & span {
@@ -70,9 +73,11 @@
       color: $c3;
     }
   }
-  &__link:hover {
+  &__link:hover,
+  &__link:active,
+  &__link:visited,
+  &__link:focus {
     text-decoration: none;
     color: $c3;
   }
-  
 }

@@ -1,8 +1,16 @@
 footer {
     display: flex;
     align-items: center;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     justify-content: flex-start;
+    border: 2px solid $c2;
+    border-radius: 10px;
+
+    & p {
+      padding: 0 20px;
+      font-weight: 700;
+      font-size: 1.7rem;
+    }
   
     & .instagram {
       width: 30px;
@@ -10,7 +18,7 @@ footer {
       background: url("../images/instagram.png");
       background-size: cover;
       display: flex;
-      margin-left: 20px;
+      margin: 5px 20px;
     }
     & .facebook {
       width: 30px;
@@ -18,6 +26,6 @@ footer {
       background: url("../images/facebook.png");
       background-size: cover;
       display: flex;
-      margin-left: 20px;
+      margin: 5px 20px;
     }
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import Game from "./Game";
 
 class ShowMore extends React.Component {
   state = {
@@ -18,17 +19,19 @@ class ShowMore extends React.Component {
           this.props.children
         ) : (
           // eslint-disable-next-line
-          <button onClick={this.handleClick}>?</button>
+          <button onClick={this.handleClick} className="button__click">
+            ?
+          </button>
         )}
       </div>
     );
   }
 }
 
-const Episode1 = () => (
+const ShowGame = () => (
   <ShowMore>
-    <h2>The best language school for your child</h2>
+    <Game />
   </ShowMore>
 );
 
-export default Episode1;
+export default ShowGame;

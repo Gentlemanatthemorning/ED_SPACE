@@ -1,9 +1,9 @@
-import shuffle from 'shuffle-array';
+import shuffle from "shuffle-array";
 
 class MemoryCards {
   constructor() {
     this.cards = [];
-    this.NUM_IMAGES = 10;
+    this.NUM_IMAGES = 12;
   }
 
   generateCardSet() {
@@ -11,18 +11,18 @@ class MemoryCards {
     // Generate a set of cards with image pairs
     //
     this.cards = [];
-    let id=1;
-    for(let i=1; i <= this.NUM_IMAGES; i++) {
+    let id = 1;
+    for (let i = 1; i <= this.NUM_IMAGES; i++) {
       let card1 = {
         id: id,
-        image : i,
+        image: i,
         imageUp: false,
         matched: false
       };
       id++;
       let card2 = {
         id: id,
-        image : i,
+        image: i,
         imageUp: false,
         matched: false
       };
@@ -32,15 +32,15 @@ class MemoryCards {
     }
 
     // Randomize the card set
-    shuffle(this.cards);  
+    shuffle(this.cards);
   }
 
   getCard(id) {
-    for(let i=0; i < 2*this.NUM_IMAGES; i++) {
+    for (let i = 0; i < 2 * this.NUM_IMAGES; i++) {
       if (this.cards[i].id === id) {
         return this.cards[i];
       }
-    };
+    }
   }
 
   flipCard(id, imageUp) {
@@ -58,7 +58,6 @@ class MemoryCards {
       return false;
     }
   }
-
-};
+}
 
 export default MemoryCards;

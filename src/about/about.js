@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Image1 from "../images/about/bg1.jpg";
 import Image2 from "../images/about/bg2.jpg";
 import Image3 from "../images/about/bg3.jpg";
+// import More1 from "./more1";
+// import More2 from "./more2";
+// import More3 from "./more3";
 
 class About extends React.Component {
   render() {
@@ -13,12 +16,12 @@ class About extends React.Component {
             <div className="parallax__1" />
             <div className="container__fill__1">
               <div className="about__container">
-                <div className="about__1" style={{ height: 230 }}>
+                <div className="about__1">
                   <img
-                    style={{ width: "230px", height: "230px" }}
                     src={Image1}
                     alt=""
                   />
+                  {/* <More1 /> */}
                   <p>
                     Ми в <span>#ED_SPACE</span> створили спеціальний курс
                     практичної англійської мови для дітей віком від 4-х років. У
@@ -46,12 +49,12 @@ class About extends React.Component {
                     час для відвідування нашого безкоштовного заняття.
                   </p>
                 </div>
-                <div className="about__2" style={{ height: 230 }}>
+                <div className="about__2">
                   <img
-                    style={{ width: "230px", height: "230px" }}
                     src={Image2}
                     alt=""
                   />
+                  {/* <More2 /> */}
                   <p>
                     «Щоб бути розумним треба прочитати одну книгу. Щоб знайти її
                     - потрібні тисячі» - так каже одна мудрість. Це саме
@@ -72,12 +75,12 @@ class About extends React.Component {
                     цікавішим!
                   </p>
                 </div>
-                <div className="about__3" style={{ height: 230 }}>
+                <div className="about__3">
                   <img
-                    style={{ width: "230px", height: "230px" }}
                     src={Image3}
                     alt=""
                   />
+                  {/* <More3 /> */}
                   <p>
                     Ми знаємо, що вам, як батькам, дуже важливо розуміти як
                     справи у вашої самостійної дитини. Які в неї успіхи у
@@ -104,6 +107,8 @@ class About extends React.Component {
         </div>
         <footer>
           <p>&copy; #ED_SPACE 2018</p>
+          <p>+380-(00)-000-00-00</p>
+          <p>вул. Богдана Хмельницького 9. м. Біла Церква</p>
           <Link to="/contact" className="instagram" />
           <Link to="/contact" className="facebook" />
         </footer>

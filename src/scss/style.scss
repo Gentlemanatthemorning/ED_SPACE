@@ -1,12 +1,14 @@
 @import "./base/variables";
 @import "./base/normalize";
-// @import "./base/grid";
 
 @import "./components/header";
 @import "./components/footer";
+@import "./components/slider";
+@import "./components/game";
 
 @import "./partials/mainPage/logo";
 @import "./partials/mainPage/fill";
+@import "./partials/mainPage/tagsZone";
 
 @import "./partials/about/logo";
 @import "./partials/about/fill";
@@ -14,7 +16,7 @@
 @import "./partials/lessons/logo";
 
 @import "./partials/games/logo";
-@import "./partials/games/game";
+@import "./partials/games/fill";
 
 @import "./partials/contact/logo";
 @import "./partials/contact/form";

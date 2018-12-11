@@ -1,0 +1,50 @@
+.slide-zone {
+    display: flex;
+    justify-content: space-between;
+  
+    & p {
+      color: $c2;
+      width: 70%;
+      padding: 10px 15px;
+      font-size: 16px;
+      font-family: "Montserrat Alternates", sans-serif;
+  
+      & span {
+        color: $c3;
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 15px;
+    margin-right: 0px;
+    margin-left: auto;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 360px;
+    height: 420px;
+    margin-top: 10px;
+  }
+  
+  .carousel-control.left {
+    height: 360px;
+  }
+  
+  .carousel-control.right {
+    height: 360px;
+  }
+  
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+  
+  .carousel-indicators li {
+    background: $c2;
+  }
+  .carousel-indicators li.active {
+    background: $c3;
+  }
