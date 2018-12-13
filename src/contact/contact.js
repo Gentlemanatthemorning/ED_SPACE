@@ -8,14 +8,14 @@ class Contact extends React.Component {
         <div className="main__logo">
           <div className="container">
             <div className="parallax__4" />
-            <div className="container__fill__4">
+            <div className="container__fill__4" id="formSelect">
               <h2>
                 <span>Заповни форму</span> та отримай можливість прийняти участь
                 в <span>космічному </span>
                 занятті в нашому освітньому просторі
               </h2>
               <div className="form__container">
-                <form className="form" id="form">
+                <form className="form">
                   <div className="form__left">
                     <div className="form__row">
                       <label htmlFor="name" className="visuallyhidden">

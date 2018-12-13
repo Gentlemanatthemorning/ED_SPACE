@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
 import ShowMoreText from "react-show-more-text";
 
 // ...
 
-class More3 extends Component {
+class More3 extends React.Component {
   executeOnClick(isExpanded) {
     console.log(isExpanded);
   }
@@ -13,8 +13,8 @@ class More3 extends Component {
     return (
       <ShowMoreText
         lines={2}
-        more="Show more"
-        less="Show less"
+        more="Показати більше"
+        less="Звернути"
         anchorClass=""
         onClick={this.executeOnClick}
       >
@@ -28,11 +28,11 @@ class More3 extends Component {
           зтикається в навчанні, що дається легко та багато іншого.
           <br />
           <br />
-          <span>Регулярний зворотній зв’язок</span> - важко переоцінити, аби
-          мати розуміння своїх успіхів для ефективного навчання. Ви будете
-          розуміти, на що ми робимо акценти при роботі з вашою дитиною. Таким
-          чином, ви постійно залучені до процесу освіти дитини, матимете
-          розуміння прогресу у навчанні та її емоційного стану.
+          Регулярний зворотній зв’язок - важко переоцінити, аби мати розуміння
+          своїх успіхів для ефективного навчання. Ви будете розуміти, на що ми
+          робимо акценти при роботі з вашою дитиною. Таким чином, ви постійно
+          залучені до процесу освіти дитини, матимете розуміння прогресу у
+          навчанні та її емоційного стану.
         </p>
       </ShowMoreText>
     );

@@ -1,13 +1,17 @@
-.game__zone__1 {
+.game__zone__1,
+.game__zone__2 {
   display: flex;
   padding: 15px;
   justify-content: space-around;
   text-align: center;
   & h2 {
     color: $c1;
+    font-family: $f1
   }
   & p {
     color: $c3;
+    font-family: $f1;
+    max-width: 95%;
   }
   & img {
     border-radius: 25px;
@@ -15,17 +19,5 @@
 }
 
 .game__zone__2 {
-  display: flex;
   padding: 0 15px;
-  justify-content: space-around;
-  text-align: center;
-  & h2 {
-    color: $c1;
-  }
-  & p {
-    color: $c3;
-  }
-  & img {
-    border-radius: 25px;
-  }
 }

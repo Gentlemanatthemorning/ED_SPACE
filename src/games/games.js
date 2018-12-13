@@ -26,7 +26,6 @@ class Games extends React.Component {
                       vitae temporibus minus culpa eligendi praesentium
                       aspernatur nam. Eaque, maxime numquam. Provident nostrum
                       tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                      Voluptas optio voluptatibus ipsum.
                     </p>
                   </div>
                   <div className="game__zone__1__box__2">
@@ -39,7 +38,6 @@ class Games extends React.Component {
                       vitae temporibus minus culpa eligendi praesentium
                       aspernatur nam. Eaque, maxime numquam. Provident nostrum
                       tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                      Voluptas optio voluptatibus ipsum.
                     </p>
                   </div>
                 </div>
@@ -54,7 +52,6 @@ class Games extends React.Component {
                       vitae temporibus minus culpa eligendi praesentium
                       aspernatur nam. Eaque, maxime numquam. Provident nostrum
                       tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                      Voluptas optio voluptatibus ipsum.
                     </p>
                   </div>
                   <div className="game__zone__2__box__2">
@@ -67,7 +64,6 @@ class Games extends React.Component {
                       vitae temporibus minus culpa eligendi praesentium
                       aspernatur nam. Eaque, maxime numquam. Provident nostrum
                       tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                      Voluptas optio voluptatibus ipsum.
                     </p>
                   </div>
                 </div>

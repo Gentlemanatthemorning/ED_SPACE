@@ -1,73 +1,40 @@
 .about__container {
   display: flex;
   flex-direction: column;
+  color: $c3;
+  font-family: $f1;
+  font-size: 16px;
+  & img {
+    height: 230px;
+    max-width: 230px;
+    padding-right: 15px;
+  }
+  & p {
+    font-size: 1.6rem;
+    color: $c3;
+    font-family: $f1;
+    border-bottom: 2px solid $c1;
+  }
+  & a {
+    color: $c1;
+    font-weight: 700;
+  }
 }
 
 .about {
   &__1 {
-    height: 240px;
     display: flex;
     padding: 10px 15px 0px 15px;
-    & img {
-      height: 230px;
-      min-width: 230px;
-      padding-right: 15px;
-    }
-    & p {
-      width: 100%;
-      font-size: 16px;
-      color: $c3;
-      border-bottom: 2px solid $c1;
-      font-family: "Montserrat Alternates", sans-serif;
-      margin: 0px;
-      & span {
-        color: $c1;
-        font-weight: 700;
-      }
-    }
   }
-
   &__2 {
     display: flex;
     padding: 10px 15px 10px 15px;
-    & img {
-      height: 230px;
-      min-width: 230px;
-      padding-right: 15px;
-    }
     & p {
-      width: 100%;
-      font-size: 16px;
-      color: $c3;
       border-bottom: 2px solid $c3;
-      font-family: "Montserrat Alternates", sans-serif;
-      margin: 0px;
-      & span {
-        color: $c1;
-        font-weight: 700;
-      }
     }
   }
-
   &__3 {
     display: flex;
     padding: 0px 15px 10px 15px;
-    & img {
-      height: 230px;
-      min-width: 230px;
-      padding-right: 15px;
-    }
-    & p {
-      width: 100%;
-      font-size: 16px;
-      color: $c3;
-      border-bottom: 2px solid $c1;
-      font-family: "Montserrat Alternates", sans-serif;
-      margin: 0px;
-      & span {
-        color: $c1;
-        font-weight: 700;
-      }
-    }
   }
 }

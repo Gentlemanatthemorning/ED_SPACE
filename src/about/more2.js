@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
 import ShowMoreText from "react-show-more-text";
 
 // ...
 
-class More2 extends Component {
+class More2 extends React.Component {
   executeOnClick(isExpanded) {
     console.log(isExpanded);
   }
@@ -13,8 +13,8 @@ class More2 extends Component {
     return (
       <ShowMoreText
         lines={2}
-        more="Show more"
-        less="Show less"
+        more="Показати більше"
+        less="Звернути"
         anchorClass=""
         onClick={this.executeOnClick}
       >
@@ -30,9 +30,9 @@ class More2 extends Component {
           <br />
           Наші викладачі відібрали найкращі матеріали з вже існючих книг.
           Пропустили неважливе, та закцентували увагу на потрібному. Жодної
-          непотрібної вправи. Лише якісний «контент». Більше ніякого
-          <span>«London is the capital of Great Britain»</span>! Все це для
-          того, щоб зробити навчання для вас легшим та цікавішим!
+          непотрібної вправи. Лише якісний «контент». Більше ніякого «London is
+          the capital of Great Britain»! Все це для того, щоб зробити навчання
+          для вас легшим та цікавішим!
         </p>
       </ShowMoreText>
     );
