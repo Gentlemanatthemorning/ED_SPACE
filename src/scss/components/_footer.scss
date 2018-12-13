@@ -1,31 +1,25 @@
 footer {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    justify-content: flex-start;
-    border: 2px solid $c2;
-    border-radius: 10px;
-
-    & p {
-      padding: 0 20px;
-      font-weight: 700;
-      font-size: 1.7rem;
-    }
-  
-    & .instagram {
-      width: 30px;
-      height: 30px;
-      background: url("../images/instagram.png");
-      background-size: cover;
-      display: flex;
-      margin: 5px 20px;
-    }
-    & .facebook {
-      width: 30px;
-      height: 30px;
-      background: url("../images/facebook.png");
-      background-size: cover;
-      display: flex;
-      margin: 5px 20px;
-    }
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  & p {
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 1.5rem;
   }
+  @mixin social {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    display: flex;
+    margin: 5px 20px;
+  }
+  & .instagram {
+    background: url("../images/instagram.png");
+    @include social();
+  }
+  & .facebook {
+    background: url("../images/facebook.png");
+    @include social();
+  }
+}

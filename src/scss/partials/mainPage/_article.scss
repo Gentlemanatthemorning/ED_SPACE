@@ -25,13 +25,62 @@
       & p {
         font-family: $f1;
         font-size: 1.5rem;
+        color: $c2;
       }
     }
   }
-
+  &__2 {
+    margin-top: 5%;
+  }
   &__2,
   &__3,
   &__4 {
     display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.55);
+    padding: 15px;
+    border-radius: 20px;
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+    & h2 {
+      font-size: 3.5rem;
+      font-family: $f1;
+      color: $c2;
+    }
+    & p {
+      font-size: 1.7rem;
+      padding: 15px;
+      font-family: $f1;
+      color: $c2;
+    }
+  }
+  &__2__text,
+  &__3__text,
+  &__4__text {
+    & h2 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  &__3 {
+    & button {
+      font-size: 2rem;
+      background: none;
+      border: 2px solid $c2;
+      border-radius: 20px;
+      & a {
+        text-decoration: none;
+        color: $c2;
+      }
+    }
+    & button:hover {
+      transform: scale(1.15);
+      transition: 0.3s;
+      background: $c1;
+    }
   }
 }
