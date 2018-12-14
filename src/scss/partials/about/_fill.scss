@@ -1,19 +1,23 @@
 .about__container {
   display: flex;
-  flex-direction: column;
+  padding: $p1;
+  justify-content: space-around;
+  text-align: center;
   color: $c3;
   font-family: $f1;
-  font-size: 16px;
+  font-size: 1.6rem;
+  background: $c2;
   & img {
     height: 230px;
-    max-width: 230px;
-    padding-right: 15px;
+    min-width: 230px;
+    padding-bottom: 5px;
   }
   & p {
     font-size: 1.6rem;
     color: $c3;
     font-family: $f1;
-    border-bottom: 2px solid $c1;
+    border: 1px solid $c1;
+    border-radius: 20px;
   }
   & a {
     color: $c1;
@@ -22,19 +26,10 @@
 }
 
 .about {
-  &__1 {
-    display: flex;
-    padding: 10px 15px 0px 15px;
-  }
-  &__2 {
-    display: flex;
-    padding: 10px 15px 10px 15px;
-    & p {
-      border-bottom: 2px solid $c3;
-    }
-  }
+  &__1,
+  &__2,
   &__3 {
-    display: flex;
-    padding: 0px 15px 10px 15px;
+    width: 33.333%;
+    margin: 0 15px;
   }
 }

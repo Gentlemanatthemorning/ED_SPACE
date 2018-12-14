@@ -1,7 +1,7 @@
 .game__zone__1,
 .game__zone__2 {
   display: flex;
-  padding: 15px;
+  padding: $p1;
   justify-content: space-around;
   text-align: center;
   & h2 {
@@ -19,5 +19,5 @@
 }
 
 .game__zone__2 {
-  padding: 0 15px;
+  padding: 0 $p1;
 }

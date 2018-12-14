@@ -1,6 +1,12 @@
 .container__fill__1 {
   background: $c2;
-  height: 750px;
+  padding-bottom: $p1;
+  & a {
+    color: $c3;
+  }
+  & a:nth-child(2n) {
+    padding: 0 $p1;
+  }
 }
 
 .parallax__1 {

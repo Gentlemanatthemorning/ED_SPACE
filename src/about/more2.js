@@ -12,7 +12,7 @@ class More2 extends React.Component {
   render() {
     return (
       <ShowMoreText
-        lines={2}
+        lines={4}
         more="Показати більше"
         less="Звернути"
         anchorClass=""

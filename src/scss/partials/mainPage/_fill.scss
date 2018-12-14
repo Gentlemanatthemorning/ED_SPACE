@@ -2,20 +2,19 @@
   background: $c2;
   height: 55rem;
 
-
   & article {
     display: flex;
     justify-content: space-between;
 
-  & h2 {
-    color: $c1;
-    padding-left: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 3em;
-    font-weight: bold;
-  }
+    & h2 {
+      color: $c1;
+      padding-left: $p1;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 3em;
+      font-weight: bold;
+    }
 
     .img1,
     .img2,
@@ -44,7 +43,7 @@
 }
 
 .article__img__title__1 {
-  @include title()
+  @include title();
 }
 
 .article__img__title__2 {

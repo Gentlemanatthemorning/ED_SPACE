@@ -1,5 +1,5 @@
 .main__zone {
-  padding: 15px;
+  padding: $p1;
   &__price {
     color: $c3;
     padding: 13px;
@@ -17,7 +17,7 @@
       }
     }
     &__text__1 {
-      padding-left: 15px;
+      padding-left: $p1;
       & h2 {
         font-weight: 700;
         color: $c2;
@@ -40,7 +40,7 @@
     margin-bottom: 15px;
     justify-content: space-around;
     background: rgba(255, 255, 255, 0.55);
-    padding: 15px;
+    padding: $p1;
     border-radius: 20px;
     & img {
       width: 100px;
@@ -53,7 +53,7 @@
     }
     & p {
       font-size: 1.7rem;
-      padding: 15px;
+      padding: $p1;
       font-family: $f1;
       color: $c2;
     }

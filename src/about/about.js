@@ -17,27 +17,20 @@ class About extends React.Component {
             <div className="container__fill__1">
               <div className="about__container">
                 <div className="about__1">
-                  <img
-                    src={Image1}
-                    alt=""
-                  />
+                  <img src={Image1} alt="" />
                   <More1 />
                 </div>
                 <div className="about__2">
-                  <img
-                    src={Image2}
-                    alt=""
-                  />
+                  <img src={Image2} alt="" />
                   <More2 />
                 </div>
                 <div className="about__3">
-                  <img
-                    src={Image3}
-                    alt=""
-                  />
+                  <img src={Image3} alt="" />
                   <More3 />
                 </div>
               </div>
+              <a href="/">Політика конфіденційності</a>
+              <a href="/">Публічна оферта</a>
             </div>
           </div>
         </div>
