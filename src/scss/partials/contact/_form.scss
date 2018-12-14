@@ -4,27 +4,26 @@
   padding:0 15px;
 
   &__left {
-    width: 735px;
+    width: 77rem;
   }
 
   &__right {
-    width: 345px;
+    width: 34rem;
   }
 
-  &__img {
-    height: 210px;
-    background: $c3;
+  & img {
+    height: 32rem;
+    width: 32rem;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
     display: flex;
   }
 
   &__row {
-    margin-bottom: 26px;
+    margin-bottom: 2.5rem;
 
     & textarea {
-      min-height: 150px;
+      min-height: 11rem;
       resize: vertical;
       padding: 10px;
       color: $c1;
@@ -32,7 +31,7 @@
   }
 
   &__control {
-    height: 65px;
+    height: 5rem;
     width: 100%;
     border: 1px solid $c3;
     outline: none;
@@ -71,27 +70,26 @@
     }
 
     & input:checked {
-      background: $c2;
       background-repeat: no-repeat;
       background-size: auto 80%;
       background-position: center;
-      background-color: $c1;
+      background-image: url("../images/check.png");
+    }
+    & input:focus {
+      outline: none;
     }
   }
 
   &__submit {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding:10px 20px;
     text-transform: uppercase;
     border: 0;
     cursor: pointer;
-    font-size: 25px;
-    border-radius: 10px;
-    background: $c1;
-    border: 1px solid $c3;
-    color: $c3;
+    font-size: 2.5rem;
+    border-radius: 25px;
+    background: none;
+    border: 2px solid $c1;
+    color: $c1;
     font-weight: 300;
   }
 
@@ -100,10 +98,9 @@
   }
 
   &__submit:hover {
-    transform: scale(1.1);
     border: 2px solid $c3;
-    transition: 0.5s;
-    font-weight: 400;
+    color: $c3;
+    transition: 0.4s;
   }
 }
 
@@ -165,7 +162,7 @@
 
 /* When the radio button is checked, add a blue background */
 .container__round input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: $c1;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -187,5 +184,5 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: $c3;
+  background: $c2;
 }

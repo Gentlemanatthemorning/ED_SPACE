@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import star from "../contact/images/stars.png"
 
 class Contact extends React.Component {
   render() {
@@ -68,7 +69,9 @@ class Contact extends React.Component {
                     </label>
                   </div>
                   <div className="form__right">
-                    <div className="form__img" />
+                    <div className="form__img">
+                    <img src={star} alt=""/>
+                    </div>
                     <div className="form__row">
                       <label className="form__checkbox">
                         <input type="checkbox" id="agree" name="regulations" />
