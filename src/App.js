@@ -1,6 +1,11 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
+import Image1 from "./images/img1.jpg";
+import Image2 from "./images/img2.jpg";
+import Image3 from "./images/img3.jpg";
+import Image4 from "./images/img4.jpg";
+
 import flag from "./images/flag.png";
 
 import calendar from "./images/articles/image1.png";
@@ -9,11 +14,6 @@ import test from "./images/articles/image3.png";
 import free from "./images/articles/image4.png";
 import calm from "./images/articles/image5.png";
 import grammar from "./images/articles/image6.png";
-
-import Hover1 from "./hover1";
-import Hover2 from "./hover2";
-import Hover3 from "./hover3";
-import Hover4 from "./hover4";
 
 let testLink =
   "https://docs.google.com/forms/d/e/1FAIpQLScMEaI6WY-MuFa59hhZwDaAXNZ3_0IX2effq0yF5Yl-ajcWRA/viewform";
@@ -36,59 +36,93 @@ class Main extends React.Component {
                   team
                 </h2>
                 <div>
-                  <Hover1 />
+                  <img className="img1" src={Image1} alt="" />
+                  <h3 className="article__img__title__1">
+                    Marina Remezova
+                    <br />
+                    <br />
+                    Experienced Teacher
+                    <br />
+                    <br />
+                    Founder ED_SPACE
+                  </h3>
                 </div>
                 <div>
-                  <Hover2 />
+                  <img className="img2" src={Image2} alt="" />
+                  <h3 className="article__img__title__2">
+                    Great Teacher
+                    <br />
+                    <br />
+                    International Practitioner
+                    <br />
+                    <br />
+                    English Language
+                  </h3>
                 </div>
                 <div>
-                  <Hover3 />
+                  <img className="img3" src={Image3} alt="" />
+                  <h3 className="article__img__title__3">
+                    Business Teacher
+                    <br />
+                    <br />
+                    Business Mentor
+                    <br />
+                    <br />
+                    Gaming Lessons
+                  </h3>
                 </div>
                 <div>
-                  <Hover4 />
+                  <img className="img4" src={Image4} alt="" />
+                  <h3 className="article__img__title__4">
+                    Art Teacher
+                    <br />
+                    <br />
+                    Art Critic
+                    <br />
+                    <br />
+                    Creative Projects
+                  </h3>
                 </div>
               </article>
             </div>
             <section className="main__zone">
               <div className="main__zone__1">
-                <div className="main__zone__1__box__1">
-                  <img src={flag} alt="" />
-                  <div className="main__zone__1__text__1">
-                    <h2>The most popular language in the world</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Esse corporis quasi quas, ea repellat cumque iste optio
-                      autem maiores ex repudiandae sint asperiores repellendus
-                      vitae temporibus minus culpa eligendi praesentium
-                      aspernatur nam. Eaque, maxime numquam. Provident nostrum
-                      tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Esse corporis quasi quas, ea repellat cumque iste optio
-                      autem maiores ex repudiandae sint asperiores repellendus
-                      vitae temporibus minus culpa eligendi praesentium
-                      aspernatur nam. Eaque, maxime numquam. Provident nostrum
-                      tempore eos voluptates qui ipsa adipisci aut itaque minus!
-                    </p>
-                    <h3 className="main__zone__price">Всього 73 грн/год</h3>
-                  </div>
+                <img src={flag} alt="" />
+                <div className="main__zone__1__text__1">
+                  <h2>The most popular language in the world</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Esse corporis quasi quas, ea repellat cumque iste optio
+                    autem maiores ex repudiandae sint asperiores repellendus
+                    vitae temporibus minus culpa eligendi praesentium aspernatur
+                    nam. Eaque, maxime numquam. Provident nostrum tempore eos
+                    voluptates qui ipsa adipisci aut itaque minus! Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Esse corporis
+                    quasi quas, ea repellat cumque iste optio autem maiores ex
+                    repudiandae sint asperiores repellendus vitae temporibus
+                    minus culpa eligendi praesentium aspernatur nam. Eaque,
+                    maxime numquam. Provident nostrum tempore eos voluptates qui
+                    ipsa adipisci aut itaque minus!
+                  </p>
+                  <h3 className="main__zone__price">Всього 73 грн/год</h3>
                 </div>
-                <div className="main__zone__2">
-                  <div>
-                    <img src={calendar} alt="" />
-                    <h2>Зручні дні</h2>
-                  </div>
-                  <div className="main__zone__2__text">
-                    <h2>ПН-СР-ПТ або ВТ-ЧТ</h2>
-                    <p>
-                      Ми розуміємо що зараз у дітей є багато справ після школи.
-                      Обирайте зручний графік самостійно
-                    </p>
-                    <h2>З 9:00 до 21:00</h2>
-                  </div>
-                  <div>
-                    <img src={clock} alt="" />
-                    <h2>Зручний час</h2>
-                  </div>
+              </div>
+              <div className="main__zone__2">
+                <div>
+                  <img src={calendar} alt="" />
+                  <h2>Зручні дні</h2>
+                </div>
+                <div className="main__zone__2__text">
+                  <h2>ПН-СР-ПТ або ВТ-ЧТ</h2>
+                  <p>
+                    Ми розуміємо що у дітей є багато справ як в школі, так і після школи.
+                    Обирайте зручний графік самостійно
+                  </p>
+                  <h2>З 9:00 до 21:00</h2>
+                </div>
+                <div>
+                  <img src={clock} alt="" />
+                  <h2>Зручний час</h2>
                 </div>
               </div>
               <div className="main__zone__3">

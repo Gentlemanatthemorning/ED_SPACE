@@ -1,6 +1,5 @@
 .container__fill__4 {
     background: $c2;
-    height: 58rem;
     & h2 {
       color: $c3;
       font-family: $f1;
@@ -8,7 +7,7 @@
       padding: $p1;
       font-size: 3.5rem;
       text-align: center;
-      letter-spacing: 4px;
+      letter-spacing: .4rem;
       & span {
         color: $c1;
       }
@@ -16,7 +15,7 @@
     & h2:nth-child(2n) {
       color: $c3;
       text-align: left;
-      padding: 0 0 15px 0;
+      padding: 0 0 $p1 0;
       & span {
         color: $c1;
       }
@@ -26,6 +25,6 @@
     background: url("../images/bg4.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 750px;
+    height: 75rem;
     width: 100vw;
   }

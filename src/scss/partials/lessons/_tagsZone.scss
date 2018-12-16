@@ -1,4 +1,5 @@
 .tags__zone {
+  background: $c2;
   padding: $p1;
   text-align: center;
   & h2 {
@@ -11,7 +12,7 @@
     font-family: $f1;
     font-size: 1.3rem;
     color: $c2;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 }
 
@@ -19,31 +20,43 @@
 .tags__zone__2,
 .tags__zone__3 {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
   justify-content: space-between;
   margin-bottom: 3%;
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   &__box__1,
   &__box__2,
   &__box__3 {
-    width: 30%;
     border: 1px solid $c2;
-    border-radius: 25px;
+    border-radius: 2rem;
     background: $c1;
+    margin-bottom: 1.5rem;
+    @media #{$desktop} {
+      max-width: 30%;
+    }
   }
 }
 
 .tags__zone__3 {
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .text__zone {
-  margin: 15px;
+  background: $c2;
+
   & h2 {
     font-weight: bold;
     font-family: $f1;
     text-align: center;
     color: $c1;
     font-size: 2rem;
+    padding-bottom: 1.5rem;
     & span {
       font-size: 3rem;
     }

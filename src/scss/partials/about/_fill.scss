@@ -7,6 +7,12 @@
   font-family: $f1;
   font-size: 1.6rem;
   background: $c2;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   & img {
     height: 230px;
     min-width: 230px;
@@ -29,7 +35,9 @@
   &__1,
   &__2,
   &__3 {
+    @media #{$desktop} {
     width: 33.333%;
     margin: 0 15px;
+    }
   }
 }

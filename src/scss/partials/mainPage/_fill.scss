@@ -1,18 +1,24 @@
 .container__fill {
-  background: $c2;
-  height: 55rem;
-
   & article {
     display: flex;
-    justify-content: space-between;
+    background: $c2;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: $p1;
+
+    @media #{$desktop} {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
 
     & h2 {
       color: $c1;
-      padding-left: $p1;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 4px;
-      font-size: 3em;
+      font-size: 5rem;
       font-weight: bold;
     }
 
@@ -20,46 +26,34 @@
     .img2,
     .img3,
     .img4 {
-      min-width: 270px;
-      height: 300px;
-      margin: 15px 0px 5px 15px;
-    }
-    .img4 {
-      margin: 15px 15px 5px 15px;
+      min-width: 27rem;
+      height: 30rem;
+      border-radius: 2rem;
+      @media #{$desktop} {
+        border-radius: 0;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+      }
     }
   }
 }
 
-@mixin title {
-  position: absolute;
-  left: 18.5rem;
-  top: 43%;
-  min-width: 11.3em;
-  padding: 30px 2px;
+.article__img__title__1,
+.article__img__title__2,
+.article__img__title__3,
+.article__img__title__4 {
+  padding: 3rem 0;
+  margin: 0;
   color: $c3;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
+  border-radius: 2rem;
   text-align: center;
-}
-
-.article__img__title__1 {
-  @include title();
-}
-
-.article__img__title__2 {
-  @include title();
-  left: 47.8rem;
-  min-width: 12.55em;
-}
-
-.article__img__title__3 {
-  @include title();
-  left: 80.2rem;
-  min-width: 12.5em;
-}
-
-.article__img__title__4 {
-  @include title();
-  left: 112.5rem;
-  min-width: 12.5em;
+  margin: 15px 0;
+  @media #{$desktop} {
+    border-radius: 0;
+    margin: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top: 1rem solid $c3;
+  }
 }

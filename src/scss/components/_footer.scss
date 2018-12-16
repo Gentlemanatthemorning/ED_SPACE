@@ -1,7 +1,13 @@
 footer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 10px;
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   & p {
     padding: 0 10px;
     font-weight: 500;

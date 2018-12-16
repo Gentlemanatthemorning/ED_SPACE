@@ -1,9 +1,18 @@
+.game__container {
+  background: $c2;
+  padding: $p1;
+}
+
 .game__zone__1,
 .game__zone__2 {
   display: flex;
-  padding: $p1;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   & h2 {
     color: $c1;
     font-family: $f1
@@ -14,7 +23,7 @@
     max-width: 95%;
   }
   & img {
-    border-radius: 25px;
+    border-radius: 2rem;
   }
 }
 

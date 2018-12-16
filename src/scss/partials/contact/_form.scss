@@ -1,15 +1,19 @@
 .form {
   display: flex;
-  justify-content: space-between;
   padding:0 15px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media #{$desktop} {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__left {
-    width: 77rem;
+    @media #{$desktop} {
+    max-width: 50%;
   }
-
-  &__right {
-    width: 34rem;
-  }
+}
 
   & img {
     height: 32rem;
