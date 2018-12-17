@@ -1,11 +1,14 @@
 .page__header {
-  height: 90px;
+  height: 9rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-
+  display: none;
+  @media #{$desktop} {
+    display: block;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -17,8 +20,8 @@
 .page__nav__list {
   background: rgba(23, 23, 20, 0.7);
   display: flex;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-bottom-left-radius: $br;
+  border-top-left-radius: $br;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -29,7 +32,7 @@
     text-transform: uppercase;
     color: $c3;
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 1rem 2.5rem;
     display: block;
     transition: 0.4s;
     position: relative;
@@ -40,10 +43,10 @@
   content: "";
   position: absolute;
   bottom: 25%;
-  border-radius: 15px;
+  border-radius: $br;
   left: 50%;
   right: 50%;
-  height: 2px;
+  height: .2rem;
   background: $c3;
   transition: 0.4s;
 }
@@ -53,21 +56,21 @@
 }
 
 .page__nav__list a:hover:after {
-  left: 0;
-  right: 0;
+  left: 15%;
+  right: 15%;
 }
 
 .page__logo {
   &__link {
-    margin-left: 100px;
+    margin-left: 10rem;
     text-decoration: none;
     background: rgba(23, 23, 20, 0.7);
     display: block;
-    padding: 46px 5px 0 5px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 4.6rem .5rem .5rem .5rem;
+    border-bottom-left-radius: $br;
+    border-bottom-right-radius: $br;
     color: $c3;
-    font-size: 40px;
+    font-size: 4rem;
     & span {
       text-decoration: none;
       color: $c3;

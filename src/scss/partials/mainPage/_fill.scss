@@ -17,7 +17,7 @@
       color: $c1;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: .4rem;
       font-size: 5rem;
       font-weight: bold;
     }
@@ -28,11 +28,11 @@
     .img4 {
       min-width: 27rem;
       height: 30rem;
-      border-radius: 2rem;
+      border-radius: $br;
       @media #{$desktop} {
         border-radius: 0;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
+        border-top-left-radius: $br;
+        border-top-right-radius: $br;
       }
     }
   }
@@ -46,14 +46,14 @@
   margin: 0;
   color: $c3;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 2rem;
+  border-radius: $br;
   text-align: center;
-  margin: 15px 0;
+  margin: $p1 0;
   @media #{$desktop} {
     border-radius: 0;
     margin: 0;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: $br;
+    border-bottom-right-radius: $br;
     border-top: 1rem solid $c3;
   }
 }

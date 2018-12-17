@@ -20,7 +20,7 @@ class ShowMore extends React.Component {
         ) : (
           // eslint-disable-next-line
           <button onClick={this.handleClick} className="button__click">
-            ?
+            Let's play
           </button>
         )}
       </div>

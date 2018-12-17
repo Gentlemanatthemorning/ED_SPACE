@@ -11,10 +11,8 @@
   font-weight: 700;
   margin: 5px 0px 5px 5px;
   color: $c2;
-  width: 3rem;
-  height: 3rem;
   background: none;
-  border-radius: 50%;
+  border-radius: $br;
   border: 2px solid $c2;
 }
 .button__click:focus{

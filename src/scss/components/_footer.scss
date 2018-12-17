@@ -3,29 +3,45 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 10px;
+  padding: $p1;
   @media #{$desktop} {
     flex-wrap: nowrap;
     flex-direction: row;
   }
   & p {
-    padding: 0 10px;
     font-weight: 500;
     font-size: 1.5rem;
+    padding-right: $p1;
   }
   @mixin social {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     background-size: cover;
     display: flex;
-    margin: 5px 20px;
+    margin-right:$p1;
+    margin-bottom: $p1;
   }
   & .instagram {
     background: url("../images/instagram.png");
     @include social();
+    @media #{$desktop} {
+      margin-bottom: 0;
+    }
   }
   & .facebook {
     background: url("../images/facebook.png");
     @include social();
+    @media #{$desktop} {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.rules {
+  color: $c2;
+  padding-bottom: $p1;
+  @media #{$desktop} {
+    padding-right: $p1;
+    padding-bottom: 0;
   }
 }

@@ -1,18 +1,7 @@
-.container__fill__1 {
-  background: $c2;
-  padding-bottom: $p1;
-  & a {
-    color: $c3;
-  }
-  & a:nth-child(2n) {
-    padding: 0 $p1;
-  }
-}
-
 .parallax__1 {
   background: url("../images/bg1.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 750px;
+  height: 75rem;
   width: 100vw;
 }

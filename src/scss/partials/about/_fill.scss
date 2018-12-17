@@ -14,16 +14,17 @@
     flex-direction: row;
   }
   & img {
-    height: 230px;
-    min-width: 230px;
-    padding-bottom: 5px;
+    height: 23rem;
+    min-width: 23rem;
+    padding-bottom: .5rem;
+    border-radius: $br;
   }
   & p {
     font-size: 1.6rem;
     color: $c3;
     font-family: $f1;
     border: 1px solid $c1;
-    border-radius: 20px;
+    border-radius: $br;
   }
   & a {
     color: $c1;
@@ -37,7 +38,7 @@
   &__3 {
     @media #{$desktop} {
     width: 33.333%;
-    margin: 0 15px;
+    margin: 0 1.5rem;
     }
   }
 }

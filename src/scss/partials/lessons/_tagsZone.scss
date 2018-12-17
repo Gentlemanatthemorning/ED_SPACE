@@ -33,7 +33,7 @@
   &__box__2,
   &__box__3 {
     border: 1px solid $c2;
-    border-radius: 2rem;
+    border-radius: $br;
     background: $c1;
     margin-bottom: 1.5rem;
     @media #{$desktop} {
@@ -56,7 +56,7 @@
     text-align: center;
     color: $c1;
     font-size: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: $p1;
     & span {
       font-size: 3rem;
     }

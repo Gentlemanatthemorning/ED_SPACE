@@ -1,7 +1,7 @@
 .game {
   text-align: center;
   background: $c2;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 
   &__container {
     display: block;
@@ -11,46 +11,46 @@
 
   &__header {
     font-size: 5em;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
     font-weight: 700;
-    padding: 10px;
+    padding: $p1;
     color: white;
   }
 
   &__status {
-    padding: 0 20px 20px 20px;
-    font-size: 25px;
+    padding: 0 2rem 2rem 2rem;
+    font-size: 2.5rem;
     color: $c3;
   }
 
-  &__congrats{
-      font-size: 20px;
-      color: $c3;
-  }
-
-  &__result{
-      font-size: 20px;
-      color: $c3;
-  }
-
-  &__button{
-      background: $c1;
-      border-radius: 10px;
-      padding: 5px;
-      font-size: 25px;
-      border: none;
-      color: $c2;
-  }
-  &__button:hover{
-    background: $c1;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 25px;
-    border: none;
+  &__congrats {
+    font-size: 2rem;
     color: $c3;
+  }
+
+  &__result {
+    font-size: 2rem;
+    color: $c3;
+  }
+
+  &__button {
+    background: none;
+    padding: 0.7rem;
+    font-size: 2.5rem;
+    border: 2px solid $c1;
+    border-radius: $br;
+    color: $c3;
+  }
+  &__button:hover {
+    background: none;
+    padding: 0.7rem;
+    font-size: 2.5rem;
+    border: 2px solid $c3;
+    border-radius: $br;
+    color: $c1;
     transform: scale(1.1);
-    transition: .3s;
-}
+    transition: 0.3s;
+  }
 }
 
 .Game-intro {
@@ -60,11 +60,11 @@
 .card {
   display: inline-block;
   border-color: $c3;
-  border-width: 5px;
+  border-width: 0.5rem;
   border-style: solid;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  width: 160px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: 16rem;
 
   &__container {
     display: inline-block;

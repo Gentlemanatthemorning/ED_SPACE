@@ -7,7 +7,7 @@
     font-family: $f1;
     text-align: center;
     background: rgba(90, 90, 90, 0.5);
-    border-radius: 2rem;
+    border-radius: $br;
     @media #{$desktop} {
       border-radius: 0;
     }
@@ -22,9 +22,9 @@
       flex-direction: row;
     }
     & img {
-      min-width: 500px;
-      max-height: 300px;
-      border-radius: 2rem;
+      min-width: 50rem;
+      max-height: 30rem;
+      border-radius: $br;
       @media #{$desktop} {
         border-radius: 0;
       }
@@ -52,14 +52,14 @@
   &__4 {
     display: flex;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: $p1;
     justify-content: space-around;
     background: rgba(255, 255, 255, 0.55);
     padding: $p1;
-    border-radius: 20px;
+    border-radius: $br;
     & img {
-      width: 100px;
-      height: 100px;
+      width: 10rem;
+      height: 10rem;
     }
     & h2 {
       font-size: 3.5rem;
@@ -86,7 +86,7 @@
       font-size: 2rem;
       background: none;
       border: 2px solid $c2;
-      border-radius: 20px;
+      border-radius: $br;
       & a {
         text-decoration: none;
         color: $c2;
