@@ -5,14 +5,26 @@
   & h2 {
     font-weight: bold;
     font-family: $f1;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: $c2;
+    @media #{$tablet} {
+      font-size: 1.8rem;
+    }
+    @media #{$desktop} {
+      font-size: 2.2rem;
+    }
   }
   & p {
     font-family: $f1;
-    font-size: 1.3rem;
+    font-size: .9rem;
     color: $c2;
     padding: 0 1rem;
+    @media #{$tablet} {
+      font-size: 1.2rem;
+    }
+    @media #{$desktop} {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -24,20 +36,29 @@
   flex-direction: column;
   max-width: 100%;
   justify-content: space-between;
-  margin-bottom: 3%;
   @media #{$desktop} {
     flex-wrap: nowrap;
     flex-direction: row;
+
   }
   &__box__1,
   &__box__2,
   &__box__3 {
-    border: 1px solid $c2;
     border-radius: $br;
     background: $c1;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     @media #{$desktop} {
       max-width: 30%;
+      margin-bottom: $p1;
+    }
+    & img {
+      max-width: 9rem;
+      @media #{$tablet} {
+        max-width: 12rem;
+      }
+      @media #{$desktop} {
+        max-width: 15rem;
+      }
     }
   }
 }
@@ -55,10 +76,22 @@
     font-family: $f1;
     text-align: center;
     color: $c1;
-    font-size: 2rem;
+    font-size: .9rem;
     padding-bottom: $p1;
+    @media #{$tablet} {
+      font-size: 1.3rem;
+    }
+    @media #{$desktop} {
+      font-size: 1.7rem;
+    }
     & span {
-      font-size: 3rem;
+      font-size: 1.3rem;
+      @media #{$tablet} {
+        font-size: 1.7rem;
+      }
+      @media #{$desktop} {
+        font-size: 2.2rem;
+      }
     }
   }
 }

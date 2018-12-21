@@ -3,13 +3,16 @@
   &__price {
     color: $c3;
     padding: 13px;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: $f1;
     text-align: center;
     background: rgba(90, 90, 90, 0.5);
     border-radius: $br;
+    @media #{$tablet} {
+      font-size: 3rem;
+    }
     @media #{$desktop} {
-      border-radius: 0;
+      font-size: 4rem;
     }
   }
   &__1 {
@@ -22,25 +25,33 @@
       flex-direction: row;
     }
     & img {
-      min-width: 50rem;
-      max-height: 30rem;
+      min-width: 30rem;
+      max-height: 25rem;
       border-radius: $br;
-      @media #{$desktop} {
-        border-radius: 0;
+      @media #{$tablet} {
+        min-width: 50rem;
+        max-height: 30rem;
       }
     }
     &__text__1 {
       @media #{$desktop} {
-      padding-left: $p1;
+        padding-left: $p1;
       }
       & h2 {
+        font-size: 1.9rem;
         font-weight: 700;
         color: $c2;
+        @media #{$tablet} {
+          font-size: 3rem;
+        }
       }
       & p {
         font-family: $f1;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $c2;
+        @media #{$tablet} {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -58,35 +69,69 @@
     padding: $p1;
     border-radius: $br;
     & img {
-      width: 10rem;
-      height: 10rem;
+      width: 5rem;
+      height: 5rem;
+      @media #{$tablet} {
+        width: 7rem;
+        height: 7rem;
+      }
+      @media #{$desktop} {
+        width: 10rem;
+        height: 10rem;
+      }
     }
     & h2 {
-      font-size: 3.5rem;
+      font-size: 1.5rem;
       font-family: $f1;
       color: $c2;
+      @media #{$tablet} {
+        font-size: 2rem;
+      }
+      @media #{$desktop} {
+        font-size: 3.5rem;
+      }
     }
     & p {
-      font-size: 1.7rem;
+      font-size: .8rem;
       padding: $p1;
       font-family: $f1;
       color: $c2;
+      @media #{$tablet} {
+        font-size: 1rem;
+      }
+      @media #{$desktop} {
+        font-size: 1.7rem;
+      }
     }
   }
   &__2__text,
   &__3__text,
   &__4__text {
     & h2 {
-      font-size: 2rem;
+      font-size: 1rem;
       font-weight: 700;
+      @media #{$tablet} {
+        font-size: 1.5rem;
+      }
+      @media #{$desktop} {
+        font-size: 2rem;
+      }
     }
   }
   &__3 {
     & button {
-      font-size: 2rem;
+      font-size: .8rem;
       background: none;
-      border: 2px solid $c2;
+      border: 1px solid $c2;
       border-radius: $br;
+      @media #{$tablet} {
+        font-size: 1.2rem;
+        border: 1px solid $c2;
+      }
+      @media #{$desktop} {
+        font-size: 2rem;
+        border: 2px solid $c2;
+      }
       & a {
         text-decoration: none;
         color: $c2;

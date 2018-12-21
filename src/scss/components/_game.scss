@@ -10,17 +10,32 @@
   }
 
   &__header {
-    font-size: 5em;
+    font-size: 2.5rem;
     letter-spacing: 1.5rem;
     font-weight: 700;
-    padding: $p1;
+    padding: .5rem;
     color: white;
+    @media #{$tablet} {
+      font-size: 4rem;
+      padding: 1rem;
+    }
+    @media #{$desktop} {
+      font-size: 7rem;
+      padding: $p1;
+    }
   }
 
   &__status {
-    padding: 0 2rem 2rem 2rem;
-    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    font-size: 1.3rem;
     color: $c3;
+    @media #{$tablet} {
+      font-size: 1.7rem;
+    }
+    @media #{$desktop} {
+      font-size: 2rem;
+      padding-bottom: $p1;
+    }
   }
 
   &__congrats {
@@ -59,12 +74,21 @@
 
 .card {
   display: inline-block;
-  border-color: $c3;
-  border-width: 0.5rem;
-  border-style: solid;
+  border: 0.2rem solid $c3;
   margin-bottom: 1rem;
-  margin-left: 1rem;
-  width: 16rem;
+  margin-left: .6rem;
+  max-width: 8rem;
+  @media #{$tablet} {
+    max-width: 12rem;
+    margin-left: 1rem;
+    border: 0.3rem solid $c3;
+
+  }
+  @media #{$desktop} {
+    max-width: 17rem;
+    border: 0.4rem solid $c3;
+
+  }
 
   &__container {
     display: inline-block;

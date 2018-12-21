@@ -5,26 +5,44 @@
   text-align: center;
   color: $c3;
   font-family: $f1;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background: $c2;
   flex-wrap: wrap;
   flex-direction: column;
+  @media #{$tablet} {
+    font-size: 1.4rem;
+  }
   @media #{$desktop} {
     flex-wrap: nowrap;
     flex-direction: row;
+    font-size: 1.6rem;
   }
   & img {
-    height: 23rem;
-    min-width: 23rem;
+    height: 15rem;
+    min-width: 15rem;
     padding-bottom: .5rem;
     border-radius: $br;
+    @media #{$tablet} {
+      height: 18rem;
+      min-width: 18rem;
+    }
+    @media #{$desktop} {
+     height: 20rem;
+     min-width: 20rem; 
+    }
   }
   & p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: $c3;
     font-family: $f1;
     border: 1px solid $c1;
     border-radius: $br;
+    @media #{$tablet} {
+      font-size: 1.4rem;
+    }
+    @media #{$desktop} {
+      font-size: 1.6rem;
+    }
   }
   & a {
     color: $c1;

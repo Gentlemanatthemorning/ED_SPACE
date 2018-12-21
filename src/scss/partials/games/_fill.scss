@@ -15,15 +15,37 @@
   }
   & h2 {
     color: $c1;
-    font-family: $f1
+    font-family: $f1;
+    font-size: 2rem;
+    @media #{$tablet} {
+      font-size: 3rem;
+    }
+    @media #{$desktop} {
+      font-size: 3.5rem;
+    }
   }
   & p {
     color: $c3;
     font-family: $f1;
     max-width: 95%;
+    font-size: 1rem;
+    @media #{$tablet} {
+      font-size: 1.3rem;
+    }
+    @media #{$desktop} {
+      font-size: 1.5rem;
+    }
   }
+
   & img {
     border-radius: $br;
+    max-width: 15rem;
+    @media #{$tablet} {
+      max-width: 18rem;
+    }
+    @media #{$desktop} {
+      max-width: 20rem;
+    }
   }
 }
 

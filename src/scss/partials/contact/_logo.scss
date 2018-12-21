@@ -5,11 +5,18 @@
       font-family: $f1;
       margin: 0;
       padding: $p1;
-      font-size: 3.5rem;
+      font-size: 1.5rem;
       text-align: center;
-      letter-spacing: .4rem;
       & span {
         color: $c1;
+      }
+      @media #{$tablet} {
+        font-size: 2rem;
+        letter-spacing: .2rem;
+      }
+      @media #{$desktop} {
+        font-size: 3.5rem;
+        letter-spacing: .4rem;
       }
     }
     & h2:nth-child(2n) {
@@ -22,8 +29,8 @@
     }
   }
   .parallax__4 {
-    background: url("../images/bg4.png") no-repeat center;
-    background-size: cover;
+    background: url("../images/bgcontact.png") no-repeat center;
+    background-size: contain;
     background-attachment: fixed;
     height: 75rem;
     width: 100vw;

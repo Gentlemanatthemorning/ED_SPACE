@@ -1,46 +1,60 @@
 footer {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
   padding: $p1;
-  @media #{$desktop} {
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
   & p {
     font-weight: 500;
-    font-size: 1.5rem;
-    padding-right: $p1;
+    font-size: 0.5rem;
+    padding-right: 0.2rem;
+    @media #{$tablet} {
+      font-size: 0.9rem;
+      padding-right: 0.5rem;
+    }
+    @media #{$desktop} {
+      font-size: 1.5rem;
+      padding-right: $p1;
+    }
   }
   @mixin social {
-    width: 3rem;
-    height: 3rem;
+    width: 1rem;
+    height: 1rem;
     background-size: cover;
     display: flex;
-    margin-right:$p1;
+    margin-right: 0.2rem;
     margin-bottom: $p1;
+    @media #{$tablet} {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.7rem;
+    }
+    @media #{$desktop} {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 0;
+      margin-right: $p1;
+    }
   }
   & .instagram {
     background: url("../images/instagram.png");
     @include social();
-    @media #{$desktop} {
-      margin-bottom: 0;
-    }
   }
   & .facebook {
     background: url("../images/facebook.png");
     @include social();
-    @media #{$desktop} {
-      margin-bottom: 0;
-    }
   }
 }
 
 .rules {
+  font-size: 0.5rem;
   color: $c2;
   padding-bottom: $p1;
+  padding-right: 0.2rem;
+  @media #{$tablet} {
+    padding-right: 0.2rem;
+    font-size: 0.9rem;
+  }
   @media #{$desktop} {
+    font-size: 1.5rem;
     padding-right: $p1;
     padding-bottom: 0;
   }

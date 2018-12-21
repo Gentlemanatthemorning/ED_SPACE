@@ -1,19 +1,26 @@
 .parallax__3 {
-  background: url("../images/bg3.png") no-repeat center;
-  background-size: cover;
+  background: url("../images/bggame.png") no-repeat center;
+  background-size: contain;
   background-attachment: fixed;
   height: 75rem;
   width: 100vw;
 }
 
 .button__click {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   margin: 5px 0px 5px 5px;
   color: $c2;
   background: none;
   border-radius: $br;
-  border: 2px solid $c2;
+  border: 1px solid $c2;
+  @media #{$tablet} {
+    font-size: 1.5rem;
+  }
+  @media #{$desktop} {
+    font-size: 2rem;
+    border: 2px solid $c2;
+  }
 }
 .button__click:focus{
   outline: none;
